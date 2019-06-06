@@ -9,15 +9,18 @@ namespace WindowsFormsApp1
     public class Car
     {
         private string _name;
+        private int _numDoor;
         public Car()
         {
 
         }
-        public Car(string name)
+        public Car(string name, int numDoor)
         {
-            Name = name;
+            _name = name;
+            _numDoor = numDoor;
         }
 
         public string Name { get => _name; set => _name = value; }
+        public int NumDoor { get => _numDoor; set => _numDoor = value; }
     }
 }
