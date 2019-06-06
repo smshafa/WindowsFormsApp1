@@ -24,7 +24,8 @@ namespace WindowsFormsApp1
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("hi second");
+            Car car = new Car("H");
+            MessageBox.Show(car.Name);
         }
     }
 }
