@@ -24,8 +24,24 @@ namespace WindowsFormsApp1
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Car car = new Car("H");
-            MessageBox.Show(car.Name + car.Name);
+            Car car = new Car("206");
+            MessageBox.Show("Name: " + car.Name);
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Car car = new Car("405", 4);
+            MessageBox.Show("Name: " + car.Name + "  Number of doors: " + car.numDoor);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
